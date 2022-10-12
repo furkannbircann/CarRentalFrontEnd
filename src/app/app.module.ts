@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrandComponent } from './components/brand/brand.component';
-import { ColorComponent } from './components/color/color.component';
-import { CustomerComponent } from './components/customer/customer.component';
-import { CarComponent } from './components/car/car.component';
-import { RentalComponent } from './components/rental/rental.component';
-import { NavComponent } from './components/nav/nav.component';
+import { BrandComponent } from './components/brandComponent/brand.component';
+import { ColorComponent } from './components/colorComponent/color.component';
+import { CustomerComponent } from './components/customerComponent/customer.component';
+import { CarComponent } from './components/carComponent/car.component';
+import { RentalComponent } from './components/rentalComponent/rental.component';
+import { NavComponent } from './components/navComponent/nav.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +20,10 @@ import { NavComponent } from './components/nav/nav.component';
     CustomerComponent,
     CarComponent,
     RentalComponent,
-    NavComponent
+    NavComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

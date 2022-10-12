@@ -1,0 +1,19 @@
+<table class="table table-borderless table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Car Id</th>
+      <th scope="col">Customer Id</th>
+      <th scope="col">Rent Date</th>
+      <th scope="col">Return Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rental of rentals">
+      <th scope="row">{{customer.id}}</th>
+      <td>{{customer.customerId}}</td>
+      <td>{{customer.rentDate}}</td>
+      <td>{{customer.returnDate}}</td>
+    </tr>
+  </tbody>
+</table>
