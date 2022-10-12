@@ -11,7 +11,9 @@ export class RentalComponent implements OnInit {
   rentals: Rental[] = [];
   constructor(private rentalService: RentalService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getRentals();
+  }
   getRentals() {
     this.rentalService
       .getRentals()
